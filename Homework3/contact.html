@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <article>
+        <header>
+            <h1>Pennsylvania Native Plant Initiative</h1>
+        </header>
+    </article>
+    <article>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="plants.html">Plants</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </article> 
+    <main>
+        <form>
+            <table>
+                <tr>
+                    <td>Preferred method of contact:</td>
+                    <td>
+                        <select name="contact-method">
+                            <option>Email</option>
+                            <option>Phone</option>
+                            <option>In person</option>
+                            <option>Other (specify in message)</option>
+                        </select>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>Full name:</td>
+                    <td><input type="text" id="fname" name="full-name" placeholder="Enter your full name"></td>
+                 </tr>
+                 <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+                 </tr>
+                 <tr>
+                    <td>Subject:</td>
+                    <td><input type="text" id="subject" name="subject" placeholder="Enter the subject"></td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><textarea id="message" name="message" placeholder="Enter your message"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+</body>
+</html>
