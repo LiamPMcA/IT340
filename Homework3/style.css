@@ -1,0 +1,83 @@
+#header { 
+    background-color: #203a26;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+#footer { 
+    background-color: #203a26;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+
+}
+#navbar { 
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+#plantinfo {
+    background-color: white;
+    border: 2px solid #203a26;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Times New Roman", Times, serif;
+
+ }
+.plant-card {
+     display: flex;
+     align-items: center;
+}
+.plant-details li {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+}
+.image-section img {
+    border-radius: 10px;
+}
+#infotable { 
+    background-color: white;
+    border: 2px solid #203a26;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+#infotable tr {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 8px;
+    align-items: center;
+}
+#infotable td {
+    padding: 8px;
+}
+#infotable select,
+#infotable textarea {
+    width: 20%;
+    box-sizing: border-box;
+}
+#infotable input[type="submit"],
+#infotable input[type="reset"] {
+    width: auto;
+    padding: 6px 12px;
+}
