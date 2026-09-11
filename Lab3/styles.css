@@ -13,7 +13,7 @@ body {
 
 /*Main header*/
 #header {
-    background-color: #315c3a;
+    background-color: #4d7c59;
     color: #fff;
     padding: 30px;
     margin: 0;
@@ -65,7 +65,7 @@ main{
 
 .plant article {
     background-color: white;
-    border: 2px solid #315c3a;
+    border: 2px solid #4d7c59;
     border-radius: 10px;
     padding: 20px;
     display: grid;
@@ -89,7 +89,7 @@ main{
 }
 
 .plant-info h3{
-    color: #315c3a;
+    color: #4d7c59;
     margin-top: 0;
 }
 
@@ -109,14 +109,14 @@ th, td{
     text-align: left;
 }   
 th{
-    background-color: #315c3a;
+    background-color: #4d7c59;
     color: #fff;
 }
 td{
     background-color: #f9f9f9;
 }
 footer{
-    background-color: #222;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
