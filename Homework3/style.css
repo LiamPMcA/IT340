@@ -39,14 +39,24 @@
 
  }
 .plant-card {
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid #203a26;
+    border-radius: 10px;
 }
 .plant-details li {
     font-size: 18px;
     font-family: "Times New Roman", Times, serif;
 }
 .image-section img {
+    width: 100%;
+    min-width: 500px;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
 }
 #infotable { 
@@ -82,6 +92,31 @@
     padding: 6px 12px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 600px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .plant-card,
+    #plantinfo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #infotable tr {
+        display: block;
+    }
+
+    #infotable td {
+        display: block;
+        width: 100%;
+    }
+
+    #infotable select,
+    #infotable textarea,
+    #infotable input {
+        width: 100%;
+    }
 }
