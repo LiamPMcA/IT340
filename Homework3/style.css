@@ -18,11 +18,26 @@
     text-align: left;
 
 }
-#navbar { 
-    color: #fff;
-    text-decoration: none;
+#navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #333;
     padding: 10px 15px;
     font-family: "Times New Roman", Times, serif;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+#navbar a:hover,
+#navbar a:focus {
+    background-color: #4d7c59;
+    border-radius: 5px;
 
 }
 #plantinfo {
@@ -30,7 +45,8 @@
     border: 2px solid #203a26;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     align-items: center;
@@ -53,11 +69,15 @@
     font-family: "Times New Roman", Times, serif;
 }
 .image-section img {
+    display: block;
     width: 100%;
-    min-width: 500px;
     max-width: 500px;
     height: auto;
     border-radius: 10px;
+}
+
+.image-section {
+    min-width: 0;
 }
 #infotable { 
     background-color: white;
@@ -92,6 +112,32 @@
     padding: 6px 12px;
 }
 
+#infotable button {
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin-right: 8px;
+    background-color: #203a26;
+    color: #fff;
+    cursor: pointer;
+}
+
+#infotable button:hover,
+#infotable button:focus {
+    background-color: #4d7c59;
+}
+
+@media (max-width: 900px) {
+    .plant-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .image-section img {
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 600px) {
     #navbar {
         display: flex;
@@ -99,10 +145,17 @@
         gap: 10px;
     }
 
-    .plant-card,
     #plantinfo {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .plant-card {
+        padding: 12px;
+    }
+
+    .image-section img {
+        max-width: 100%;
     }
 
     #infotable tr {
