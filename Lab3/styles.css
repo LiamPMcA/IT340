@@ -122,6 +122,10 @@ footer{
     padding: 20px;
     margin-top: 30px;
 }
+#topBtn{
+    display: flex;
+    justify-content: right;
+}
 
 /*Responsive css for mobile devices*/
 @media (max-width: 480px){
