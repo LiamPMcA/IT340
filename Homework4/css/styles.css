@@ -1,0 +1,116 @@
+/*Main header*/
+.header {
+    background-color: #62a164;
+    color: #ddd;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    margin: 0 0 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+nav{
+    border: 3px solid #62a164;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: blue;
+}
+
+.main-content{
+    border: 3px solid #62a164;
+    border-radius: 12px;
+    max-width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px auto;
+    padding: 20px;
+}
+.main-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+.plant-card{
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid #62a164;
+    border-radius: 10px;
+}
+
+.plant-card img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.plant-card button{
+    background-color: #62a164;
+    color: #ddd;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plant-card button a:hover{
+    color: blue;
+}
+
+
+.plant-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.footer{
+    background-color: #62a164;
+    color: #ddd;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    margin: 20px 0 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .plant-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .main-content{
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .plant-card{
+        margin: 10px 0;
+    }
+
+    .plant-card img{
+        max-width: 100%;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+}
