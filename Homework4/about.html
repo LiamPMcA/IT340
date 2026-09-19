@@ -13,11 +13,56 @@
         <a href="about.html">About</a>  
         <a href="search.html">Plants</a>
         <a href="admin.html">Admin</a>
+        <input type="text" placeholder="Search..">
     </nav>
     <main class="main-content">
-        <h1>About Us</h1>
-        <p>Welcome to our Native Plant App! We are dedicated to providing information about native plants in your area. Our goal is to help you learn more about the plants that are native to your region and how to care for them.</p>
-        <p>Our team of experts has curated a comprehensive database of native plants, including their characteristics, habitat, and care requirements.</p>
+        <article>
+            <h1>About Us</h1>
+            <p>Welcome to our Native Plant App! We are dedicated to providing information about native plants in your area. Our goal is to help you learn more about the plants that are native to your region and how to care for them. 
+                Our team of experts has curated a comprehensive database of native plants, including their characteristics, habitat, and care requirements.</p>
+            <p>We believe that by promoting the use of native plants, we can help preserve local ecosystems and support biodiversity. Native plants are adapted to the local climate and soil conditions, making them more resilient and easier to maintain than non-native species.</p>
+            <p> If you would like to contact us regarding any questions or feedback, please fill out the form below:</p>
+        </article>
+        <form>
+            <table id="infotable">
+                <tr>
+                    <td>Preferred method of contact:</td>
+                    <td>
+                        <select name="contact-method">
+                            <option>Email</option>
+                            <option>Phone</option>
+                            <option>In person</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>Full name:</td>
+                    <td><input type="text" id="fname" name="full-name" placeholder="Enter your full name"></td>
+                 </tr>
+                 <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+                 </tr>
+                 <tr>
+                    <td>Subject:</td>
+                    <td><input type="text" id="subject" name="subject" placeholder="Enter the subject"></td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><textarea id="message" name="message" placeholder="Enter your message"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </main>
+    <footer class="footer">
+        <p>&copy; 2024 Native Plant App. All rights reserved.</p>
+    </footer>
 </body>
 </html>

@@ -7,12 +7,58 @@
     <title>Details</title>
 </head>
 <body>
-    <Header class="header"><h1>Native plant app</h1></Header>
+    <header class="header"><h1>Native plant app</h1></header>
     <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>  
         <a href="search.html">Plants</a>
         <a href="admin.html">Admin</a>
+        <input type="text" placeholder="Search..">
     </nav>
+    <main class="main-content" id="plant-details">
+        <img id="plant-image" src="" alt="">
+        <h1 id="plant-name"></h1>
+        <h2 id="plant-scientific-name"></h2>
+        <p id="plant-description"></p>
+        <a href="search.html">Back to plants</a>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Native Plant App. All rights reserved.</p>
+    </footer>
+    <script>
+        const plants = {
+            "butterfly-weed": {
+                name: "Butterfly Weed",
+                scientificName: "Asclepias tuberosa",
+                image: "img/buhfuh.jpg",
+                description: "Butterfly weed is a bright native perennial that attracts butterflies and supports local pollinators."
+            },
+            coneflower: {
+                name: "Coneflower",
+                scientificName: "Echinacea purpurea",
+                image: "img/coneflower.jpg",
+                description: "Coneflower is a hardy native flower that provides nectar for pollinators and seeds for birds."
+            },
+            laurel: {
+                name: "Laurel",
+                scientificName: "Kalmia latifolia",
+                image: "img/laurl.webp",
+                description: "Mountain laurel is an evergreen shrub with clusters of flowers that grows well in partial shade."
+            }
+        };
+
+        const plant = plants[new URLSearchParams(window.location.search).get("plant")];
+        const details = document.getElementById("plant-details");
+
+        if (plant) {
+            document.getElementById("plant-image").src = plant.image;
+            document.getElementById("plant-image").alt = plant.name;
+            document.getElementById("plant-name").textContent = plant.name;
+            document.getElementById("plant-scientific-name").textContent = plant.scientificName;
+            document.getElementById("plant-description").textContent = plant.description;
+        } else {
+            details.innerHTML = "<h1>Plant not found</h1><p>Return to the plant listing to choose a plant.</p><a href=\"search.html\">Back to plants</a>";
+        }
+    </script>
 </body>
 </html>
