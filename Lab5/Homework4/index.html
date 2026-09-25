@@ -15,7 +15,40 @@
         <a href="admin.html">Admin</a>
         <input type="text" placeholder="Search..">
     </nav>
+        <section class="controls">
+            <label for="search">Search Plants:</label>
+            <input type="text" id="search" placeholder="Enter a Plant name...">
+
+            <label for="genre-filter">Filter by specific Name:</label>
+            <select id="genre-filter">
+                <option value="All">All</option>
+                <option value="Butterfly Weed">Butterfly Weed</option>
+                <option value="Purple Coneflower">Coneflower</option>
+                <option value="Mountain Laurel">Mountain Laurel</option>
+                <option value="Black-Eyed Susan">Black-Eyed Susan</option>
+                <option value="New England Aster">New England Aster</option>
+                <option value="Cardinal Flower">Cardinal Flower</option>
+                <option value="Wild Bergamot">Wild Bergamot</option>
+                <option value="White Oak">White Oak</option>
+                <option value="Spicebush">Spicebush</option>
+                <option value="Switchgrass">Switchgrass</option>
+            </select>
+
+            <label for="year-filter">Filter by Nativity:</label>
+            <select id="year-filter">
+                <option value="all">Native</option>
+                <option value="1990">Not native</option>
+            </select>
+
+            <button id="reset-button">Reset Filters</button>
+        </section>
+
+        <p id="movie-count"></p>
+        <!--Part 1 Monday-->
+        <section id="movie-container"></section>
+
     <main class="main-content-grid">
+
         <img src="img/native.jpg" alt="Plant Image" class="home-image">
         <div class="home-text">
             <article>
@@ -41,6 +74,7 @@
     <footer class="footer">
         <p>&copy; 2024 Native Plant App. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
