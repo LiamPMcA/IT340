@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <main> 
+       <section class="controls">
+            <label for="search">Search Plants:</label>
+            <input type="text" id="search" placeholder="Enter a Plant name...">
+
+            <label for="genre-filter">Filter by specific Name:</label>
+            <select id="genre-filter">
+                <option value="All">All</option>
+                <option value="Butterfly Weed">Butterfly Weed</option>
+                <option value="Purple Loosestrife">Purple Loosestrife</option>
+                <option value="Japanese Barberry">Japanese Barberry</option>
+                <option value="Black-Eyed Susan">Black-Eyed Susan</option>
+                <option value="New England Aster">New England Aster</option>
+                <option value="Cardinal Flower">Cardinal Flower</option>
+                <option value="Wild Bergamot">Wild Bergamot</option>
+                <option value="Norway Maple">Norway Maple</option>
+                <option value="Burning Bush">Burning Bush</option>
+                <option value="Switchgrass">Switchgrass</option>
+                <option value="Eastern Red Columbine">Eastern Red Columbine</option>
+                <option value="Wild Blue Phlox">Wild Blue Phlox</option>
+                <option value="Golden Alexander">Golden Alexander</option>
+                <option value="Joe-Pye Weed">Joe-Pye Weed</option>
+                <option value="Japanese Knotweed">Japanese Knotweed</option>
+            </select>
+
+            <label for="year-filter">Filter by Nativity:</label>
+            <select id="year-filter">
+                <option value="all">All plants</option>
+                <option value="native">Native</option>
+                <option value="non-native">Not native</option>
+            </select>
+
+            <button id="reset-button">Reset Filters</button>
+        </section>
+
+        <p id="movie-count"></p>
+        <!--Part 1 Monday-->
+        <section id="movie-container"></section>
+    </main>
+    <script src="../js/script5.js"></script>
+</body>
+</html>
