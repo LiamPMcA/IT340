@@ -1,0 +1,68 @@
+const plants = [
+  {
+    name: 'Rose',
+    scientificName: 'Rosa rubiginosa',
+    sunlight: 'Full Sun',
+    bloomSeason: 'Spring',
+    soilType: 'Well-drained',
+    height: 3,
+  },
+  {
+    name: 'Lavender',
+    scientificName: 'Lavandula angustifolia',
+    sunlight: 'Full Sun',
+    bloomSeason: 'Summer',
+    soilType: 'Sandy',
+    height: 2,
+  },
+  {
+    name: 'Boston Fern',
+    scientificName: 'Nephrolepis exaltata',
+    sunlight: 'Shade',
+    bloomSeason: 'Fall',
+    soilType: 'Moist',
+    height: 4,
+  },
+  {
+    name: 'Sunflower',
+    scientificName: 'Helianthus annuus',
+    sunlight: 'Full Sun',
+    bloomSeason: 'Summer',
+    soilType: 'Loamy',
+    height: 6,
+  },
+  {
+    name: 'Hosta',
+    scientificName: 'Hosta plantaginea',
+    sunlight: 'Partial Shade',
+    bloomSeason: 'Summer',
+    soilType: 'Moist',
+    height: 2,
+  },
+  {
+    name: 'Tulip',
+    scientificName: 'Tulipa gesneriana',
+    sunlight: 'Full Sun',
+    bloomSeason: 'Spring',
+    soilType: 'Well-drained',
+    height: 1,
+  },
+  {
+    name: 'Hydrangea',
+    scientificName: 'Hydrangea macrophylla',
+    sunlight: 'Partial Shade',
+    bloomSeason: 'Summer',
+    soilType: 'Acidic',
+    height: 5,
+  },
+  {
+    name: 'Daisy',
+    scientificName: 'Bellis perennis',
+    sunlight: 'Full Sun',
+    bloomSeason: 'Spring',
+    soilType: 'Loamy',
+    height: 2,
+  },
+]
+
+export default plants
