@@ -182,3 +182,12 @@
     border-right-color: var(--border);
   }
 }
+
+.plant-image {
+  display: block;
+  max-width: min(100%, 400px);
+  max-height: 280px;
+  object-fit: cover;
+  margin: 12px auto;
+  border-radius: 8px;
+}
